@@ -1,15 +1,18 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import AppTextInput from './app/components/AppTextInput';
+import Screen from './app/components/Screen';
+import colors from './app/config/colors';
+import ListingScreen from './app/screens/ListingScreen';
 
-import MessagesScreen from './app/screens/MessagesScreen';
 // import { MaterialCommunityIcons } from "@expo/vector-icons"
 
 
 
 export default function App() {
   return (
-    <MessagesScreen />
+    <Screen>
+      <AppTextInput placeholder={"its me pazz"} icon="email" />
+    </Screen>
   );
 }
 
